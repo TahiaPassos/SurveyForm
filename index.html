@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Survey Form</title>
+</head>
+
+<body>
+
+  <div class="split">
+    <div id="left-side">
+      <div id="left-content">
+        <h1 id="title">Learning process survey</h1>
+        <p id="description">Hi! We would love to hear your thoughts about which way you feel more comfortable when learning something new. Please, take a moment to share them with us :)</p>
+      </div>
+    </div>
+
+    <div id="right-side">
+      <div id="right-content">
+        <form id="survey-form" action="">
+          <label id="name-label" for="name">Name</label>
+          <input class="input" type="text" name="name" id="name" placeholder="Please enter your name" required>
+
+          <label id="email-label" for="email">E-mail</label>
+          <input class="input" type="email" name="email" id="email" placeholder="Please enter your e-mail" required>
+
+          <label id="number-label" for="number">How many hours do you usually study?</label>
+          <input class="input" type="number" min="0" max="20" name="name" id="number" placeholder="Hours" required>
+
+          <p>Which option best describes your current role?</p>
+          <select id="dropdown" name="role" required>
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+
+          <div id="radio">
+            <p>Do you think you know how to study?</p>
+            <label>
+              <input name="knowledge" value="of-course" type="radio" class="input-radio">Of course
+            </label>
+            <label>
+              <input name="knowledge" value="not-sure" type="radio" class="input-radio">Not sure
+            </label>
+            <label>
+              <input name="knowledge" value="not-at-all" type="radio" class="input-radio">Not at all
+            </label>
+          </div>
+
+          <div id="checkbox">
+            <p>How do you like studying the most?</p>
+            <label>
+              <input name="prefer" value="reading" type="checkbox" class="input-checkbox">Reading
+            </label>
+            <label>
+              <input name="prefer" value="listening" type="checkbox" class="input-checkbox">Listening
+            </label>
+            <label>
+              <input name="prefer" value="watching" type="checkbox" class="input-checkbox">Watching
+            </label>
+            <label>
+              <input name="prefer" value="doing" type="checkbox" class="input-checkbox">Doing
+            </label>
+          </div>
+
+          <div id="comments-container">
+            <p>If you have any other comments regarding this subject, please let us know</p>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+          </div>
+
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+
+        </form>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
